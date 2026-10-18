@@ -1,35 +1,52 @@
-# Library Book Search (Java Swing GUI)
+# Java Core & GUI Applications (Winchester)
 
-A simple Java Swing desktop application that provides a GUI interface to search for books in a library inventory.
+[![Java](https://img.shields.io/badge/Java-17+-ED8B00?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Swing](https://img.shields.io/badge/GUI-Java_Swing-007396?logoColor=white)](https://docs.oracle.com/javase/tutorial/uiswing/)
 
-## 🚀 Features
-* Clean and interactive graphical user interface built with Java Swing (`JFrame`, `JTextField`, `JButton`, `JLabel`).
-* Fast search with case-insensitive title matching.
-* Real-time search availability status feedback (`Available` / `Not Found`).
+A collection of Java applications demonstrating Object-Oriented Programming (OOP) paradigms, GUI engineering with Java Swing, and computational geometry logic.
+
+---
+
+## 🚀 Projects & Modules
+
+### 1. 📚 Library Book Search (`LibraryBookSearch.java`)
+- **GUI Engine**: Interactive desktop GUI built using Java Swing (`JFrame`, `JTextField`, `JButton`, `JLabel`, `JPanel`).
+- **Search Logic**: Case-insensitive substring searching across catalog arrays.
+- **Visual Feedback**: Real-time availability status banners (`Available` with green highlight, `Not Found` with warning state).
+
+### 2. 📐 Land Plot Layout Checker (`LandPlotLayoutChecker.java`)
+- **Geometric Modeler**: Models $n$-sided regular polygonal land plots using OOP classes and encapsulation.
+- **Concentricity Verification**: Analyzes whether two polygon boundaries share a concentric center based on regular polygon side divisibility constraints.
+
+---
 
 ## 📁 Project Structure
-```
+
+```text
 ├── src/
-│   └── LibraryBookSearch.java   # Main Java application source code
-├── .gitignore                   # Excludes build artifacts (bin/, *.class)
-└── README.md                    # Project documentation
+│   ├── LibraryBookSearch.java       # Interactive Java Swing desktop app
+│   └── LandPlotLayoutChecker.java   # Geometric polygon centering analyzer
+├── .gitignore                       # Excludes *.class and bin/ artifacts
+└── README.md                        # Documentation
 ```
 
-## 🛠️ How to Run
+---
 
-### Using Visual Studio Code
-1. Open the project folder in VS Code.
-2. Ensure the **Extension Pack for Java** is installed.
-3. Open `src/LibraryBookSearch.java` and click **Run** (or press `F5`).
+## 🛠️ How to Compile & Run
 
-### Using Terminal / Command Prompt
+### Terminal / Command Prompt
 ```bash
-# Compile the Java file
-javac -d bin src/LibraryBookSearch.java
+# 1. Compile all Java source files into bin directory
+javac -d bin src/*.java
 
-# Run the application
+# 2. Run Library Book Search GUI
 java -cp bin LibraryBookSearch
+
+# 3. Run Land Plot Layout Checker CLI
+java -cp bin LandPlotLayoutChecker
 ```
+
+---
 
 ## 👤 Author
 * GitHub: [@iamwarriorofmyuniverse-coder](https://github.com/iamwarriorofmyuniverse-coder)
